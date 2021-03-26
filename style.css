@@ -1,0 +1,132 @@
+* {
+  font-family: "Patrick Hand", cursive;
+  --purple: #a565e0;
+  --charcoal: #39373b;
+  --mint: #46f2db;
+  --light: #f8f9fa;
+  --pink: #f48fb1;
+}
+
+nav {
+  background-color: var(--purple);
+  padding-bottom: 6rem;
+}
+
+.brand-logo {
+  font-family: "Pacifico", cursive;
+}
+#name {
+  font-size: 3vw;
+  padding: 1rem;
+}
+
+nav,
+a {
+  text-decoration: none;
+}
+
+nav,
+a:hover {
+  color: var(--mint);
+}
+
+h1::before {
+  content: " 👋 ";
+}
+
+h1 {
+  color: var(--purple);
+  text-align: center;
+  margin-top: 2rem;
+  transform: rotate(-8deg);
+  font-family: "Pacifico", cursive;
+  line-height: 5.7rem;
+  font-size: 4vw;
+}
+
+h3 {
+  background-color: var(--purple);
+  color: white;
+  text-align: center;
+}
+
+span {
+  font-size: 1.5vw;
+}
+
+p {
+  font-size: 1.5vw;
+}
+
+#hello {
+  background-color: var(--charcoal);
+}
+
+.welcome {
+  color: var(--purple);
+  margin-top: -2rem;
+  margin-left: 5rem;
+  font-size: 2.7vw;
+}
+
+#workspace {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+#headshot {
+  max-width: 80%;
+  margin: 5rem;
+}
+
+/* my work cards */
+
+.work-header {
+  text-align: center;
+}
+
+.card-title {
+  background-color: var(--mint);
+  color: var(--purple);
+  font-size: 2rem;
+}
+
+img {
+  max-width: fit-content;
+}
+
+/* about me */
+
+.modal-content {
+  background-color: var(--mint);
+}
+
+#button {
+  font-size: 1.5rem;
+  background-color: var(--purple);
+  max-width: fit-content;
+  display: block;
+  margin: auto;
+}
+
+/* photos */
+
+.carousel-item {
+  max-width: 100%;
+}
+
+/*  footer */
+
+#footer {
+  background-color: var(--purple);
+}
+
+#contact {
+  background-color: var(--purple);
+}
+
+footer,
+a:hover {
+  color: var(--mint);
+}
