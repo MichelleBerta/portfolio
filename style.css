@@ -4,7 +4,8 @@
   --charcoal: #39373b;
   --mint: #46f2db;
   --light: #f8f9fa;
-  --pink: #f48fb1;
+  --pink: #f5bff5;
+  --yellow: #f5f3bf;
 }
 body {
   background-color: var(--pink);
