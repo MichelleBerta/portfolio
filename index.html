@@ -31,12 +31,12 @@
         <div class="brand-logo right" id="name">Michelle Berta</div>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li>
-            <a href="#work">
+            <a href="#my-work">
               <h4>My Work</h4>
             </a>
           </li>
           <li>
-            <a href="#about">
+            <a href="#about-me">
               <h4>About Me</h4>
             </a>
           </li>
@@ -77,158 +77,144 @@
   </div>
   <!-- work -->
   <div class="container">
-    <div class="col12 l7 m12 s12">
-      <div id="my work">
-        <h3>Take a Look at Some of My Work</h3>
-        <ul class="collapsible">
-
-          <!-- quiz -->
-          <li>
-            <div class="collapsible-header card-title">
-              <i class="material-icons">description</i>Coding Quiz
-            </div>
-            <div class="collapsible-body">
-              <div class="card-image waves-block waves-light">
-                <img src="assets/images/coding-quiz-challenge.gif" alt="quiz with mulitple choice answers" />
-              </div>
-              <span>This online coding quiz was built by manipulating the DOM.
-                The user answers a series of multiple choice questions. If a
-                wrong answer is given time is deducted from the amount of
-                time remaining. At the end of the quiz the user’s final
-                time/score and initials are logged. Participants are ranked
-                according to their score. I had to build the html, css and
-                js files from scratch. This project utilized and increased
-                my knowledge of: event listeners, timers/intervals and
-                interval clears, text content, local storage, and query
-                selectors.</span>
-              <a href="https://michelleberta.github.io/coding-quiz-challenge/" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">Take a Coding Quiz</a>
-            </div>
-          </li>
-          <!-- weather -->
-          <li>
-            <div class="collapsible-header card-title">
-              <i class="material-icons">description</i>Weather Dashboard
-            </div>
-            <div class="collapsible-body">
-              <div class="card-image waves-block waves-light">
-                <img src="assets/images/weather-dashboard-screenshot.png" alt="display of current weather and forecast" />
-              </div>
-              <span>This weather dashboard runs in the browser and features
-                dynamically updated HTML and CSS. <br />
-                AS A traveler I WANT to see the weather outlook for multiple
-                cities <br />
-                SO THAT I can plan a trip accordingly GIVEN a weather
-                dashboard with form inputs <br />
-                WHEN I search for a city <br />
-                THEN I am presented with current and future conditions for
-                that city and that city is added to the search history
-                <br />
-                WHEN I view current weather conditions for that city<br />
-                THEN I am presented with the city name, the date, an icon
-                representation of weather conditions, the temperature, the
-                humidity, the wind speed, and the UV index <br />
-                WHEN I view the UV index <br />
-                THEN I am presented with a color that indicates whether the
-                conditions are favorable, moderate, or severe <br />
-                WHEN I view future weather conditions for that city <br />
-                THEN I am presented with a 5-day forecast that displays the
-                date, an icon representation of weather conditions, the
-                temperature, and the humidity <br />
-                WHEN I click on a city in the search history <br />
-                THEN I am again presented with current and future conditions
-                for that city.</span>
-              <a href="https://michelleberta.github.io/weather-dashboard/" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">Check the Weather</a>
-            </div>
-          </li>
-
-          <!-- scheduler -->
-          <li>
-            <div class="collapsible-header card-title">
-              <i class="material-icons">description</i>Work Day Scheduler
-            </div>
-            <div class="collapsible-body">
-              <div class="card-image waves-block waves-light">
-                <img class="activator" src="assets/images/work-day-scheduler.gif" alt="calendar with to do list" />
-              </div>
-              <span>This simple calendar application allows a user to save
-                events for each hour of the day by modifying starter code.
-                The app runs in the browser and features dynamically updated
-                HTML and CSS powered by jQuery.</span>
-              <a href="https://michelleberta.github.io/work-day-scheduler/" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">Create A To Do</a>
-            </div>
-          </li>
-
-
-          <!-- password -->
-          <li>
-            <div class="collapsible-header card-title">
-              <i class="material-icons">description</i>Password Generator
-            </div>
-            <div class="collapsible-body">
-              <div class="card-image waves-block waves-light">
-                <img class="activator" src="assets/images/password-generator.png" alt="button to generate a password" />
-              </div>
-              <span>This application is a random password generator. Using
-                prompts the generator is supposed to ask the user four
-                questions.<br />
-
-                1. How many characters, between 8 - 128, are to be
-                included,<br />
-                2. if lower case letters were to be included,<br />
-                3. if upper case letters were to be included,<br />
-                4. if numbers were to be included, and<br />
-                5. if special characters were to be included.<br />
-
-                All of the desired characters are pulled from the ASCII
-                character table. Through prompts and confirms, the users
-                responses are stored. Using a for loop, js pulls the needed
-                number and type of characters. The js file looks to the html
-                file for when to begin generating the password and where to
-                display it once it is created.</span>
-              <a href="https://michelleberta.github.io/password-generator/" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">Generate a Password</a>
-            </div>
-          </li>
-
-          <!-- burglar -->
-          <li>
-            <div class="collapsible-header card-title">
-              <i class="material-icons">description</i>Catch the Burglar
-            </div>
-            <div class="collapsible-body">
-              <div class="card-image waves-block waves-light">
-                <img class="activator" src="assets/images/Catch-the-Burglar.png" alt="Sherlock with magnifying glass" />
-              </div>
-
-              <span> MIT has a website that allows you to create video games. I
-                created this Catch the Burglar game.</span>
-
-              <a href="https://scratch.mit.edu/projects/47" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">Catch the Burglar</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-
-
-    <!--About Me-->
-    <div class="about-me-card col12 s12 m12 l3">
+    <div class="main">
       <div class="row">
-        <div class="card">
-          <!-- Card Title -->
-          <div class="card-content" id="about-me-header">
-            <h3>A Little Bit About Me</h3>
-          </div>
+        <div class="col l5 m12 s12" id="my-work">
+          <h3>Take a Look at My Work</h3>
+          <ul class="collapsible popout">
 
-          <!-- Modal Start -->
-          <div class="info-modal">
-            <!-- Modal Button -->
-            <a class="waves-effect waves-light btn modal-trigger hoverable" id="button" href="#modal">More Info</a>
-          </div>
-          <!-- Modal Inside -->
-          <div id="modal" class="modal">
-            <div class="modal-content">
-              <h4>A Little Bit About Me</h4>
+            <!-- quiz -->
+            <li>
+              <div class="collapsible-header card-title">
+                <i class="material-icons">description</i>Coding Quiz
+              </div>
+              <div class="collapsible-body">
+                <div class="card-image waves-block waves-light">
+                  <img src="assets/images/coding-quiz-challenge.gif" alt="quiz with mulitple choice answers" />
+                </div>
+                <span>This online coding quiz was built by manipulating the DOM.
+                  The user answers a series of multiple choice questions. If a
+                  wrong answer is given time is deducted from the amount of
+                  time remaining. At the end of the quiz the user’s final
+                  time/score and initials are logged. Participants are ranked
+                  according to their score. I had to build the html, css and
+                  js files from scratch. This project utilized and increased
+                  my knowledge of: event listeners, timers/intervals and
+                  interval clears, text content, local storage, and query
+                  selectors.</span>
+                <a href="https://michelleberta.github.io/coding-quiz-challenge/" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">Take a Coding Quiz</a>
+              </div>
+            </li>
+            <!-- weather -->
+            <li>
+              <div class="collapsible-header card-title">
+                <i class="material-icons">description</i>Weather Dashboard
+              </div>
+              <div class="collapsible-body">
+                <div class="card-image waves-block waves-light" id="weather">
+                  <img src="assets/images/weather-dashboard-screenshot.png" alt="display of current weather and forecast" />
+                </div>
+                <span>This weather dashboard runs in the browser and features
+                  dynamically updated HTML and CSS. <br />
+                  AS A traveler I WANT to see the weather outlook for multiple
+                  cities <br />
+                  SO THAT I can plan a trip accordingly GIVEN a weather
+                  dashboard with form inputs <br />
+                  WHEN I search for a city <br />
+                  THEN I am presented with current and future conditions for
+                  that city and that city is added to the search history
+                  <br />
+                  WHEN I view current weather conditions for that city<br />
+                  THEN I am presented with the city name, the date, an icon
+                  representation of weather conditions, the temperature, the
+                  humidity, the wind speed, and the UV index <br />
+                  WHEN I view the UV index <br />
+                  THEN I am presented with a color that indicates whether the
+                  conditions are favorable, moderate, or severe <br />
+                  WHEN I view future weather conditions for that city <br />
+                  THEN I am presented with a 5-day forecast that displays the
+                  date, an icon representation of weather conditions, the
+                  temperature, and the humidity <br />
+                  WHEN I click on a city in the search history <br />
+                  THEN I am again presented with current and future conditions
+                  for that city.</span>
+                <a href="https://michelleberta.github.io/weather-dashboard/" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">Check the Weather</a>
+              </div>
+            </li>
+
+            <!-- scheduler -->
+            <li>
+              <div class="collapsible-header card-title">
+                <i class="material-icons">description</i>Work Day Scheduler
+              </div>
+              <div class="collapsible-body">
+                <div class="card-image waves-block waves-light">
+                  <img class="activator" src="assets/images/work-day-scheduler.gif" alt="calendar with to do list" />
+                </div>
+                <span>This simple calendar application allows a user to save
+                  events for each hour of the day by modifying starter code.
+                  The app runs in the browser and features dynamically updated
+                  HTML and CSS powered by jQuery.</span>
+                <a href="https://michelleberta.github.io/work-day-scheduler/" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">Create A To Do</a>
+              </div>
+            </li>
+
+
+            <!-- password -->
+            <li>
+              <div class="collapsible-header card-title">
+                <i class="material-icons">description</i>Password Generator
+              </div>
+              <div class="collapsible-body">
+                <div class="card-image waves-block waves-light">
+                  <img class="activator" src="assets/images/password-generator.png" alt="button to generate a password" />
+                </div>
+                <span>This application is a random password generator. Using
+                  prompts the generator is supposed to ask the user four
+                  questions.<br />
+
+                  1. How many characters, between 8 - 128, are to be
+                  included,<br />
+                  2. if lower case letters were to be included,<br />
+                  3. if upper case letters were to be included,<br />
+                  4. if numbers were to be included, and<br />
+                  5. if special characters were to be included.<br />
+
+                  All of the desired characters are pulled from the ASCII
+                  character table. Through prompts and confirms, the users
+                  responses are stored. Using a for loop, js pulls the needed
+                  number and type of characters. The js file looks to the html
+                  file for when to begin generating the password and where to
+                  display it once it is created.</span>
+                <a href="https://michelleberta.github.io/password-generator/" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">Generate a Password</a>
+              </div>
+            </li>
+
+            <!-- burglar -->
+            <li>
+              <div class="collapsible-header card-title">
+                <i class="material-icons">description</i>Catch the Burglar
+              </div>
+              <div class="collapsible-body">
+                <div class="card-image waves-block waves-light">
+                  <img class="activator" src="assets/images/Catch-the-Burglar.png" alt="Sherlock with magnifying glass" />
+                </div>
+
+                <span> MIT has a website that allows you to create video games. I
+                  created this Catch the Burglar game.</span>
+
+                <a href="https://scratch.mit.edu/projects/47" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">Catch the Burglar</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!--About Me-->
+
+        <div class="col l7 m12 s12" id="about-me">
+          <div class="card">
+            <h3>A Little About Me</h3>
+            <div class="card-content">
               <p class="card-text">
                 After recently becoming an empty nester, I decided to take
                 on a whole new role in life. I spent twenty one years
@@ -253,66 +239,56 @@
                 rooms, Italy, meeting new people and solving a good
                 mystery.
                 <br />
-                <br />
-                To view my resume, click on this link.
-              </p>
-              <a href="assets/resume.pdf" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button"><i class="material-icons right">description</i>See My
-                Resume</a>
+
+                <a href="assets/resume.pdf" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button"><i class="material-icons right">description</i>See My
+                  Resume</a>
             </div>
-            <div class="modal-footer">
-              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-            </div>
+          </div>
+        </div>
+        <div class="card-image">
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="assets/images/Clue.jpg" alt="friends dressed as Clue characters" /></a>
+            <a class="carousel-item" href="#two!"><img src="assets/images/Live Clue.jpg" alt="table set with large pawns and Clue accessories" /></a>
+            <a class="carousel-item" href="#three!"><img src="assets/images/Sad-pug.jpg" alt="a pug smiling up a camera" /></a>
+            <a class="carousel-item" href="#four!"><img src="assets/images/Italy.jpg" alt="the Colosseum, in Rome at dusk" /></a>
+            <a class="carousel-item" href="#five!"><img src="assets/images/swing dance 2.jpg" alt="couple swing dancing" /></a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- photos -->
-  <div class="container">
-    <div class="carousel">
-      <a class="carousel-item" href="#one!"><img src="assets/images/Clue.jpg" alt="friends dressed as Clue characters" /></a>
-      <a class="carousel-item" href="#two!"><img src="assets/images/Live Clue.jpg" alt="table set with large pawns and Clue accessories" /></a>
-      <a class="carousel-item" href="#three!"><img src="assets/images/Sad-pug.jpg" alt="a pug smiling up a camera" /></a>
-      <a class="carousel-item" href="#four!"><img src="assets/images/Italy.jpg" alt="the Colosseum, in Rome at dusk" /></a>
-      <a class="carousel-item" href="#five!"><img src="assets/images/swing dance 2.jpg" alt="couple swing dancing" /></a>
-    </div>
   </div>
 
   <!-- footer -->
-  <div class="container">
-    <footer class="page-footer" id="footer">
-      <div class="container">
-        <div class="row" id="contact">
-          <div class="col l6 s12">
-            <h4>
-              Contact Me <br />
-              I look forward to connecting with you.
-            </h4>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">
-              Links
-              <ul>
-                <li>
-                  <a class="grey-text text-lighten-3">Phone: 469-358-0710</a>
-                </li>
-                <li>
-                  <a class="grey-text text-lighten-3" href="mailto:bertafamily@sbcglobal.net" target="_blank">Email</a>
-                </li>
-                <li>
-                  <a class="grey-text text-lighten-3" href="https://linkedin.com/in/michelle-berta" target="-blank">LinkedIn</a>
-                </li>
-                <li>
-                  <a class="grey-text text-lighten-3" href="https://github.com/MichelleBerta?tab=repositories" target="_blank">Github</a>
-                </li>
-              </ul>
-            </h5>
-          </div>
-        </div>
+  <footer class="page-footer" id="footer">
+    <div class="row" id="contact">
+      <div class="col l6 s12">
+        <h2>Contact Me</h2>
+        <h4>I look forward to connecting with you.
+        </h4>
       </div>
-    </footer>
-  </div>
+      <div class="col l4 offset-l2 s12">
+        <h4 class="white-text">
+          Links</h4>
+        <h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3">Phone: 469-358-0710</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="mailto:bertafamily@sbcglobal.net" target="_blank">Email</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="https://linkedin.com/in/michelle-berta" target="-blank">LinkedIn</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="https://github.com/MichelleBerta?tab=repositories" target="_blank">Github</a>
+            </li>
+          </ul>
+        </h5>
+      </div>
+    </div>
+  </footer>
   <!-- scripts -->
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -6,6 +6,9 @@
   --light: #f8f9fa;
   --pink: #f48fb1;
 }
+body {
+  background-color: var(--pink);
+}
 
 nav {
   background-color: var(--purple);
@@ -40,7 +43,7 @@ h1 {
   margin-top: 2rem;
   transform: rotate(-8deg);
   font-family: "Pacifico", cursive;
-  line-height: 5.7rem;
+  line-height: 5.7vw;
   font-size: 4vw;
 }
 
@@ -78,8 +81,13 @@ p {
 #headshot {
   max-width: 80%;
   margin: 5rem;
+  display: block;
+  margin: 2 auto;
 }
 
+.main {
+  background-color: var(--mint);
+}
 /* my work cards */
 
 .work-header {
@@ -87,19 +95,16 @@ p {
 }
 
 .card-title {
-  background-color: var(--mint);
+  background-color: var(--charcoal);
   color: var(--purple);
   font-size: 2rem;
 }
 
-img {
-  max-width: fit-content;
-}
-
 /* about me */
 
-.modal-content {
-  background-color: var(--mint);
+.card {
+  background-color: var(--charcoal);
+  color: var(--purple);
 }
 
 #button {
@@ -108,12 +113,6 @@ img {
   max-width: fit-content;
   display: block;
   margin: auto;
-}
-
-/* photos */
-
-.carousel-item {
-  max-width: 100%;
 }
 
 /*  footer */
