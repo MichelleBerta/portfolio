@@ -7,6 +7,7 @@
   --pink: #f5bff5;
   --yellow: #f5f3bf;
 }
+
 body {
   background-color: var(--pink);
 }
@@ -36,21 +37,24 @@ h1::before {
 }
 
 h1 {
-  color: var(--purple);
+  color: var(--mint);
   text-align: center;
   transform: rotate(-8deg);
   font-family: "Pacifico", cursive;
 }
 
+
 h3 {
-  color: var(--purple);
+  color: var(--mint);
 }
 
+
 #section-title {
-  background-color: var(--purple);
-  color: white;
+  background-color: var(--mint); 
+  color: var(--charcoal);
   text-align: center;
 }
+
 
 #hello {
   background-color: var(--charcoal);
@@ -69,8 +73,10 @@ h3 {
 }
 
 .main {
-  background-color: var(--mint);
+  background-color: var(--purple);
 }
+
+
 /* my work cards and about me */
 
 .work-header {
@@ -78,8 +84,8 @@ h3 {
 }
 
 .card-title {
-  background-color: var(--charcoal);
-  color: var(--purple);
+ background-color: var(--charcoal); 
+  color: var(--mint);
 }
 
 p {
@@ -92,11 +98,13 @@ span {
 
 .card {
   background-color: var(--charcoal);
-  color: var(--purple);
+  color: var(--mint);
 }
 
+
 #button {
-  background-color: var(--purple);
+  background-color: var(--mint);
+  color: var(--charcoal);
   max-width: fit-content;
   display: block;
   margin: auto;
@@ -116,3 +124,42 @@ footer,
 a:hover {
   color: var(--mint);
 }
+
+/* LIGHT MODE 
+
+#hello {
+  background-color: var(--light);
+}
+
+.card-title {
+  background-color: var(--light);
+  color: var(--purple);
+}
+
+.card {
+  background-color: var(--light);
+  color: var(--purple);
+}
+
+h1 {
+  color: var(--purple);
+}
+
+h3 {
+  color: var(--purple);
+}
+
+#section-title {
+  background-color: var(--purple);
+  color: var(--light);
+}
+
+#button {
+  background-color: var(--mint);
+  color: var(--light);
+}
+
+.main {
+  background-color: var(--mint);
+}
+*/

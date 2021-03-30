@@ -1,14 +1,10 @@
 $(document).ready(function () {
-  $(".modal").modal();
-});
-
-$(document).ready(function () {
   $(".carousel").carousel();
 });
 
-$(document).ready(function () {
+function () {
   $(".collapsible").collapsible();
-});
+};
 
 /*
 // Access toggle switch HTML element
