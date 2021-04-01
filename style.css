@@ -37,27 +37,13 @@ h1::before {
 }
 
 h1 {
-  color: var(--mint);
   text-align: center;
   transform: rotate(-8deg);
   font-family: "Pacifico", cursive;
 }
 
-
-h3 {
-  color: var(--mint);
-}
-
-
 #section-title {
-  background-color: var(--mint); 
-  color: var(--charcoal);
   text-align: center;
-}
-
-
-#hello {
-  background-color: var(--charcoal);
 }
 
 #workspace {
@@ -72,20 +58,10 @@ h3 {
   margin: auto;
 }
 
-.main {
-  background-color: var(--purple);
-}
-
-
 /* my work cards and about me */
 
 .work-header {
   text-align: center;
-}
-
-.card-title {
- background-color: var(--charcoal); 
-  color: var(--mint);
 }
 
 p {
@@ -96,21 +72,70 @@ span {
   font-size: x-large;
 }
 
-.card {
-  background-color: var(--charcoal);
-  color: var(--mint);
-}
-
-
 #button {
-  background-color: var(--mint);
-  color: var(--charcoal);
   max-width: fit-content;
   display: block;
   margin: auto;
 }
 
-/*  footer */
+/* DARK MODE */
+.dark,
+.dark .card-title,
+.dark .card {
+  background-color: var(--charcoal);
+}
+
+.dark #section-title,
+.dark #button {
+  color: var(--charcoal);
+}
+
+.dark h1,
+.dark h3,
+.dark .card,
+.dark .card-title {
+  color: var(--mint);
+}
+
+.dark .main {
+  background-color: var(--purple);
+}
+
+.dark #button,
+.dark #section-title {
+  background-color: var(--mint);
+}
+
+/* BRIGHT MODE */
+
+.bright,
+.bright .card-title,
+.bright .card {
+  background-color: var(--light);
+}
+
+.bright #section-title,
+.bright #button {
+  color: var(--light);
+}
+
+.bright h1,
+.bright h3,
+.bright .card,
+.bright .card-title {
+  color: var(--purple);
+}
+
+.bright .main {
+  background-color: var(--mint);
+}
+
+.bright #button,
+.bright #section-title {
+  background-color: var(--purple);
+}
+
+/* footer */
 
 #footer {
   background-color: var(--purple);
@@ -125,41 +150,66 @@ a:hover {
   color: var(--mint);
 }
 
-/* LIGHT MODE 
-
-#hello {
-  background-color: var(--light);
+/* Styling the Switch button */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-.card-title {
-  background-color: var(--light);
-  color: var(--purple);
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.card {
-  background-color: var(--light);
-  color: var(--purple);
-}
-
-h1 {
-  color: var(--purple);
-}
-
-h3 {
-  color: var(--purple);
-}
-
-#section-title {
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: var(--purple);
-  color: var(--light);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-#button {
-  background-color: var(--mint);
-  color: var(--light);
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.main {
-  background-color: var(--mint);
+input:checked + .slider {
+  background-color: var(--pink);
 }
-*/
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(29, 128, 210);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.row {
+  margin: 20px;
+  display: flex;
+}
+.col {
+  margin: 20px;
+}
