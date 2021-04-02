@@ -33,7 +33,10 @@ a:hover {
 }
 
 .dropdown {
-  background-color: var(--pink);
+  background-color: var(--mint);
+}
+
+h5 {
   color: var(--purple);
 }
 
@@ -54,7 +57,8 @@ h1 {
 #workspace {
   max-width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: auto;
+  padding-top: 100px;
 }
 
 #headshot {
@@ -85,6 +89,12 @@ span {
 }
 
 #carousel {
+  padding-bottom: 200px;
+  margin-right: 500px;
+}
+
+.carousel {
+  overflow: visible;
 
 }
 
@@ -149,15 +159,7 @@ span {
 
 #footer {
   background-color: var(--purple);
-}
-
-#contact {
-  background-color: var(--purple);
-}
-
-footer,
-a:hover {
-  color: var(--mint);
+  color: white
 }
 
 /* switch */
@@ -166,7 +168,7 @@ a:hover {
   display: inline-block;
   width: 60px;
   height: 34px;
-  margin: 85px;
+  margin: 15px;
 }
 
 .slider {
