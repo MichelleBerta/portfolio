@@ -14,8 +14,7 @@ body {
 
 nav {
   background-color: var(--purple);
-  padding-bottom: 6rem;
-  height: 14%;
+  padding-bottom: 8rem;
 }
 
 .brand-logo {
@@ -49,6 +48,9 @@ h1 {
   transform: rotate(-8deg);
   font-family: "Pacifico", cursive;
 }
+#home {
+  margin-top: 75px;
+}
 
 #section-title {
   text-align: center;
@@ -58,13 +60,13 @@ h1 {
   max-width: 100%;
   display: block;
   margin: auto;
-  padding-top: 100px;
 }
 
 #headshot {
   max-width: 80%;
   display: block;
   margin: auto;
+  padding-top: 50px;
 }
 
 /* my work cards and about me */
@@ -88,14 +90,8 @@ span {
   margin: auto;
 }
 
-#carousel {
-  padding-bottom: 200px;
-  margin-right: 500px;
-}
-
 .carousel {
   overflow: visible;
-
 }
 
 /* DARK MODE */
