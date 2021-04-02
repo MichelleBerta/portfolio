@@ -11,13 +11,16 @@ $(document).ready(function () {
 
   // Listen for a click event on toggle switch
   themeSwitcher.addEventListener("click", function () {
+    console.log(container);
     darkMode = !darkMode;
     // If mode is dark, apply light background
     if (!darkMode) {
-      container.setAttribute("class", "bright");
+      container.classList.remove("dark");
+      container.classList.add("bright");
     } else {
       //remove bright class//
-      container.removeAttribute("class", "bright");
+      container.classList.remove("bright");
+      container.classList.add("dark");
     }
   });
 });
