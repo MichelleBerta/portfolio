@@ -7,4 +7,4 @@ This includes a rotation carousel of photos, dropdown menus on the nav, modals, 
 
 https://michelleberta.github.io/portfolio/
 
-![portfolio](assets/images/screen shot of portfolio.png)
+![portfolio](assets/images/screen-shot-of-portfolio.png)
