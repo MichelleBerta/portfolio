@@ -15,11 +15,11 @@ body {
 nav {
   background-color: var(--purple);
   padding-bottom: 6rem;
+  height: 14%;
 }
 
 .brand-logo {
   font-family: "Pacifico", cursive;
-  font-size: larger;
 }
 
 nav,
@@ -30,6 +30,11 @@ a {
 nav,
 a:hover {
   color: var(--mint);
+}
+
+.dropdown {
+  background-color: var(--pink);
+  color: var(--purple);
 }
 
 h1::before {
@@ -77,6 +82,10 @@ span {
   max-width: fit-content;
   display: block;
   margin: auto;
+}
+
+#carousel {
+
 }
 
 /* DARK MODE */
@@ -151,66 +160,31 @@ a:hover {
   color: var(--mint);
 }
 
-/* Styling the Switch button */
+/* switch */
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
+  margin: 85px;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: var(--purple);
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
   background-color: var(--pink);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px rgb(29, 128, 210);
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-
-.row {
-  margin: 20px;
-  display: flex;
-}
-.col {
-  margin: 20px;
 }
