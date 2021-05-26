@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $(".carousel").carousel();
-  $('.materialboxed').materialbox();
+  $(".materialboxed").materialbox();
   $(".collapsible").collapsible();
   $(".dropdown-trigger").dropdown();
-  $('.sidenav').sidenav();
+  $(".sidenav").sidenav();
 
   // Access toggle switch HTML element
   var themeSwitcher = document.querySelector("#theme-switcher");
@@ -26,5 +26,3 @@ $(document).ready(function () {
     }
   });
 });
-
-
