@@ -68,7 +68,12 @@ h1 {
   margin: auto;
   padding-top: 50px;
 }
-
+.skills-title {
+  font-size:x-large
+}
+.skills {
+  font-size: large;
+}
 /* my work cards and about me */
 
 .work-header {
@@ -156,6 +161,12 @@ span {
 #footer {
   background-color: var(--purple);
   color: white
+}
+.footer-links {
+font-size: 2rem;
+padding-bottom: 1rem;
+display: flex;
+justify-content: space-evenly;
 }
 
 /* switch */
