@@ -69,7 +69,7 @@ h1 {
   padding-top: 50px;
 }
 .skills-title {
-  font-size:x-large
+  font-size: x-large;
 }
 .skills {
   font-size: large;
@@ -78,6 +78,15 @@ h1 {
 
 .work-header {
   text-align: center;
+}
+ul {
+  list-style-type: circle;
+  display: inline;
+}
+
+li .technologies {
+  font-size: x-large;
+  display: inline;
 }
 
 p {
@@ -160,13 +169,13 @@ span {
 
 #footer {
   background-color: var(--purple);
-  color: white
+  color: white;
 }
 .footer-links {
-font-size: 2rem;
-padding-bottom: 1rem;
-display: flex;
-justify-content: space-evenly;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* switch */
