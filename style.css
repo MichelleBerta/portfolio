@@ -17,7 +17,7 @@ nav {
   padding-bottom: 8rem;
 }
 
-.brand-logo h2 {
+.brand-logo span {
   font-family: "Pacifico", cursive;
   font-size: larger;
 }
@@ -71,9 +71,11 @@ h1 {
 }
 .skills-title {
   font-size: x-large;
+  color: var(--purple);
 }
 .skills {
-  font-size: large;
+  font-size: x-large;
+  color: var(--mint);
 }
 /* my work cards and about me */
 
@@ -124,7 +126,8 @@ span {
 .dark h1,
 .dark h3,
 .dark .card,
-.dark .card-title {
+.dark .card-title,
+.dark .skills {
   color: var(--mint);
 }
 
@@ -153,7 +156,8 @@ span {
 .bright h1,
 .bright h3,
 .bright .card,
-.bright .card-title {
+.bright .card-title,
+.bright .skills {
   color: var(--purple);
 }
 

@@ -24,28 +24,32 @@
 
 <body>
   <!-- nav -->
+  <div class="navbar-fixed">
   <nav>
-      <div class="nav-wrapper navbar-fixed" id="nav">
+      <div class="nav-wrapper" id="nav">
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <div class="brand-logo right" id="name">
-          <h2> Michelle Berta</h2>
+          <span> Michelle Berta</span>
         </div>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="#home">
-              <h4>Home</h4>
+              <span>Home</span>
             </a></li>
           <li><a href="#my-skills">
-              <h4>My Skills</h4>
+              <span>My Skills</span>
             </a></li>
           <li><a href="#my-work">
-              <h4>My Work</h4>
+              <span>My Work</span>
+            </a></li>
+            <li><a href="assets/MichelleBertaResume.pdf" target="_blank">
+              <span>My Resume</span>
             </a></li>
           <li><a href="#about-me">
-              <h4>About Me</h4>
+              <span>About Me</span>
             </a></li>
           <li>
             <a class="dropdown-trigger" href="#contact" data-target="dropdown1"><i class="material-icons right">arrow_drop_down</i>
-              <h4>Contact Me</h4>
+              <span>Contact Me</span>
             </a>
           </li>
         </ul>
@@ -62,14 +66,17 @@
         </ul>
       </div>
   </nav>
+  </div>
   <ul class="sidenav" id="mobile-demo">
     <li class="dropdown"><a href="#home">Home</a></li>
     <li class="dropdown"><a href="#my-skills">My Skills</a></li>
     <li class="dropdown"><a href="#my-work">My Work</a></li>
+    <li class="dropdown"><a href="assets/MichelleBertaResume.pdf" target="_blank">My Resume</a></li>
     <li class="dropdown"><a href="#about-me">About Me</a></li>
     <li class="dropdown"><a href="#contact">Contact me</a></li>
   </ul>
   </div>
+  
 
   <!-- intro images -->
   <div class="container dark" id="home">
@@ -113,6 +120,7 @@
             <div class="col l2 m6 s12 skills-title">
               FRONT END:
               <ul class="skills">
+                <br /> <br />
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -125,22 +133,25 @@
             <div class="col l2 m6 s12 skills-title">
               BACK END:
               <ul class="skills">
+                <br /> <br />
                 <li>Node.js</li>
                 <li>Express.js</li>
                 <li>MVC</li>
                 <li>ORM</li>
               </ul>
             </div>
-            <div class="col l2 m6 s12 skills-title">
-              DATABASES:
+            <div class="col l3 m6 s12 skills-title">
+              DATABASE:
               <ul class="skills">
+                <br /> <br />
                 <li>MySQL</li>
                 <li>MongoDB</li>
               </ul>
             </div>
-            <div class="col l2 m6 s12 skills-title">
+            <div class="col l3 m6 s12 skills-title">
               API INTERACTION:
               <ul class="skills">
+                <br /> <br />
                 <li>JSON</li>
                 <li>AJAX</li>
               </ul>
@@ -148,6 +159,7 @@
             <div class="col l2 m6 s12 skills-title">
               DEV TOOLS:
               <ul class="skills">
+                <br /> <br />
                 <li>Heroku</li>
                 <li>Git</li>
                 <li>GitHub</li>
@@ -201,6 +213,7 @@
 
                     <a href="https://secure-hollows-27877.herokuapp.com/" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the App</a>
                   </div>
+                  <br />
                   <div class="grid-example col l6 m12 s12">
                     <a href="https://github.com/MichelleBerta/budget-tracker" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the Repo</a>
                   </div>
@@ -238,6 +251,7 @@
                   <div class="grid-example col l6 m12 s12">
                     <a href="https://blooming-earth-81679.herokuapp.com/stats" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the App</a>
                   </div>
+                  <br />
                   <div class="grid-example col l6 m12 s12">
                     <a href="https://github.com/MichelleBerta/workout-tracker" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the Repo</a>
                   </div>
@@ -274,6 +288,7 @@
 
                     <a href="https://michelleberta.github.io/employee-directory" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the App</a>
                   </div>
+                  <br />
                   <div class="grid-example col l6 m12 s12">
                     <a href="https://github.com/MichelleBerta/employee-directory" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the Repo</a>
                   </div>
@@ -432,7 +447,7 @@
   <footer class="page-footer" id="footer">
     <div class="row" id="contact">
       <div class="col l12 s12">
-        <h3 class="white-text center">Contact Me.
+        <h3 class="white-text center">
           I look forward to connecting with you.
         </h3>
       </div>
