@@ -77,6 +77,7 @@ h1 {
   font-size: x-large;
   color: var(--mint);
 }
+
 /* my work cards and about me */
 
 .work-header {
@@ -131,10 +132,6 @@ span {
   color: var(--mint);
 }
 
-.dark .main {
-  background-color: var(--purple);
-}
-
 .dark #button,
 .dark #section-title {
   background-color: var(--mint);
@@ -159,10 +156,6 @@ span {
 .bright .card-title,
 .bright .skills {
   color: var(--purple);
-}
-
-.bright .main {
-  background-color: var(--mint);
 }
 
 .bright #button,
