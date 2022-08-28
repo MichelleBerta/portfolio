@@ -50,8 +50,9 @@ h1 {
   font-family: "Pacifico", cursive;
 }
 
-.welcome {
-  margin-top: 20rem;
+h3 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 .invisibleBtn {
