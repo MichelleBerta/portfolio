@@ -4,6 +4,10 @@ $(document).ready(function () {
   $(".collapsible").collapsible();
   $(".dropdown-trigger").dropdown();
   $(".sidenav").sidenav();
+  $('.modal').modal();
+    
+  });
+
 
   // Access toggle switch HTML element
   var themeSwitcher = document.querySelector("#theme-switcher");
@@ -25,4 +29,4 @@ $(document).ready(function () {
       container.classList.add("dark");
     }
   });
-});
+;

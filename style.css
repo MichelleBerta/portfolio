@@ -50,8 +50,61 @@ h1 {
   font-family: "Pacifico", cursive;
 }
 
-.lever {
-  color:
+.welcome {
+  margin-top: 20rem;
+}
+
+.invisibleBtn {
+  height: 110px;
+  width: 110px;
+}
+
+#magnifyGlass {
+  width: 45px;
+  height: 90px;
+  margin-top: 25px;
+  margin-left: 72px;
+}
+
+#beethoven {
+  width: 115px;
+  margin-top: 21px;
+  margin-left: 44px;
+}
+
+#books {
+  width: 45px;
+  height: 90px;
+  margin-top: 25px;
+  margin-left: 37px;
+}
+
+#legLamp {
+  width: 72px;
+  height: 158px;
+  margin-top: -28px;
+  margin-left: 37px;
+}
+
+#monitors {
+  width: 296px;
+  margin-top: 21px;
+  margin-left: 14px;
+}
+#jazz {
+  width: 77px;
+  margin-top: 53px;
+  margin-left: 5px;
+}
+
+.workspace-image {
+  background-image: url(assets/images/workspace.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.modal {
+  text-align: center;
 }
 
 #home {
@@ -62,10 +115,8 @@ h1 {
   text-align: center;
 }
 
-#workspace {
-  max-width: 100%;
-  display: block;
-  margin: auto;
+#jazz-img {
+  width: 50%;
 }
 
 #headshot {
@@ -120,7 +171,8 @@ span {
 /* DARK MODE */
 .dark,
 .dark .card-title,
-.dark .card {
+.dark .card,
+.dark .modal {
   background-color: var(--charcoal);
 }
 
@@ -133,7 +185,8 @@ span {
 .dark h3,
 .dark .card,
 .dark .card-title,
-.dark .skills {
+.dark .skills,
+.dark .modal {
   color: var(--mint);
 }
 
@@ -146,7 +199,8 @@ span {
 
 .bright,
 .bright .card-title,
-.bright .card {
+.bright .card,
+.bright .modal {
   background-color: var(--light);
 }
 
@@ -159,7 +213,8 @@ span {
 .bright h3,
 .bright .card,
 .bright .card-title,
-.bright .skills {
+.bright .skills,
+.bright .modal {
   color: var(--purple);
 }
 
@@ -182,30 +237,14 @@ span {
 }
 
 /* switch */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  margin: 15px;
+.switch label input[type="checkbox"]:checked + .lever {
+  background-color: #a565e0;
 }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  background-color: var(--purple);
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  left: 4px;
-  bottom: 4px;
+.switch label input[type="checkbox"]:checked + .lever:after {
   background-color: white;
-  transition: 0.4s;
 }
 
-input:checked + .slider {
-  background-color: var(--pink);
+.switch label .lever:after {
+  background-color: #46f2db;
 }
