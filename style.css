@@ -87,7 +87,7 @@ h3 {
 .invisibleBtn {
   /* height: 110px;
   width: 110px; */
-  opacity:90%;
+  opacity:0%;
 }
 
 .invisibleBtn:hover {
