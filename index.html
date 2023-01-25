@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Michelle // portfolio</title>
+  <title>Michelle's portfolio</title>
   <link rel="stylesheet" href="reset.css" />
 
   <!-- fonts -->
@@ -28,8 +28,8 @@
     <nav>
       <div class="nav-wrapper" id="nav">
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <div class="brand-logo right" id="name">
-          <span> Michelle Berta</span>
+        <div class="brand-logo right">
+          <span id="name"> Michelle Berta</span>
         </div>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="#home">
@@ -79,149 +79,145 @@
 
 
   <!-- intro images -->
-  <div class="container dark">
-    <div id="home">
-      <div class="row">
-        <div class="grid-example col l4 m12 s12 welcome">
-          <h1>Hi! <br />I'm Michelle<br /></h1>
-          <img src="assets/images/headshot copy.jpg" class="img-fluid rounded mx-auto d-block" id="headshot" alt="headshot of Michelle in red dress" />
+  <div class="container dark" id="home">
+    <div class="row">
+      <div class="col s12 m10 l4 welcome">
+        <h1>Hi! <br />I'm Michelle</h1>
+      </div>
+      <div class="col s12 m12 l2 switch">
+        <label>
+          <input type="checkbox" id="theme-switcher">
+          <span class="lever"></span>
+        </label>
+      </div>
+      <div class="col s12 m12 l6">
+        <h3 class="welcome">
+          Welcome to my workspace. <br />
+          This is where I like to make <br />
+          creations that are fun and interactive.<br />
+          Feel free to take a look around.
+          <br />
+          <br />
+          It's dark in here. Let's turn the light on!
+        </h3>
+      </div>
+    </div>
+
+    <div class="workspace-image">
+
+      <div class="row" id="invisible1">
+        <div class="headshot-div col s12 m12 l4">
+          <img src="assets/images/headshot_tiny.jpg" class="img-fluid rounded mx-auto d-block" id="headshot" alt="headshot of Michelle in red dress" />
         </div>
-        <div class="grid-example col l8 m12 s12">
-          <h3 class="welcome">
-            Welcome to my workspace. <br />
-            This is where I like to make <br />
-            creations that are fun and interactive.<br />
-            Feel free to take a look around.
-          </h3>
-          <h3>It's dark in here. Let's turn the light on!</h3>
-          <div class="switch">
-            <label>
+        <div class="col s3 m3 l2">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn green" id="magnifyGlass" href="#magnifyGlass-modal"></a>
 
-              <input type="checkbox" id="theme-switcher">
-              <span class="lever"></span>
-
-            </label>
+          <!-- Modal Structure -->
+          <div id="magnifyGlass-modal" class="modal">
+            <div class="modal-content">
+              <h4>Sherlock Holmes</h4>
+              <p>I love a good mystery. Solving puzzles and doing escape rooms are some of my favorite activities. I relish a good Sherlock Holmes story.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
           </div>
-          <div class="workspace-image">
+        </div>
+        <div class="col s3 m3 l3">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn green" id="beethoven" href="#beethoven-modal"></a>
 
-            <div class="row" id="invisible1">
-              <div class="col s3">
-                <!-- Modal Trigger -->
-                <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn transparent" id="magnifyGlass" href="#magnifyGlass-modal"></a>
+          <!-- Modal Structure -->
+          <div id="beethoven-modal" class="modal">
+            <div class="modal-content">
+              <h4>Beethoven</h4>
 
-                <!-- Modal Structure -->
-                <div id="magnifyGlass-modal" class="modal">
-                  <div class="modal-content">
-                    <h4>Sherlock Holmes</h4>
-                    <p>I love a good mystery. Solving puzzles and doing escape rooms are some of my favorite activities. Sherlock Holmes is my favorite fictional character.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col s6">
-                <!-- Modal Trigger -->
-                <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn transparent" id="beethoven" href="#beethoven-modal"></a>
-
-                <!-- Modal Structure -->
-                <div id="beethoven-modal" class="modal">
-                  <div class="modal-content">
-                    <h4>Beethoven</h4>
-
-                    <audio controls>
-                      <source src="./assets/beethoven_op13_n8_ra_03_rondo.mp3" type="audio/mpeg">
-                      Your browser does not support the audio element.
-                    </audio>
-                    <p>Classical music is what I listen to when coding. Beethoven's Piano Sonata #8, Pathetique, is one of my favorite pieces.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col s3">
-                <!-- Modal Trigger -->
-                <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn transparent" id="books" href="#books-modal"></a>
-
-                <!-- Modal Structure -->
-                <div id="books-modal" class="modal">
-                  <div class="modal-content">
-                    <h4>Library of Books</h4>
-                    <p>I am a varacious reader. Fiction, non-fictrion, I love books. I collect books and hope to have a huge library some day. <br>
-                      "A room without books is like a body without a soul.”
-                    </p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                  </div>
-                </div>
-              </div>
+              <audio controls>
+                <source src="./assets/beethoven_op13_n8_ra_03_rondo.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              <p>Classical music is what I listen to when coding. Beethoven's Piano Sonata #8, Pathetique, is a piece I never get tired of hearing.</p>
             </div>
-            <div class="row">
-              <div class="col s3">
-                <!-- Modal Trigger -->
-                <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn transparent" id="legLamp" href="#legLamp-modal"></a>
-
-                <!-- Modal Structure -->
-                <div id="legLamp-modal" class="modal">
-                  <div class="modal-content">
-                    <h4>A Leg Lamp</h4>
-                    <p>The famous leg lamp from A Christmas Story. I have one in my front window and display it with pride. A Christmas Story is my favorite Christmas movie.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col s9">
-                <!-- Modal Trigger -->
-                <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn transparent" id="monitors" href="#monitors-modal"></a>
-
-                <!-- Modal Structure -->
-                <div id="monitors-modal" class="modal">
-                  <div class="modal-content">
-                    <h4>Desk Set Up</h4>
-                    <p>With my Macbook Air, dual 27" LG monitors and Logitech MX Master wireless mouse, this is where the magic happens.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                  </div>
-                </div>
-              </div>
-
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
             </div>
-            <div class="row">
-              <div class="col s3"></div>
-              <div class="col s6"></div>
-              <div class="col s3">
+          </div>
+        </div>
+        <div class="col s3 m3 l2">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn green" id="books" href="#books-modal"></a>
 
-                <!-- Modal Trigger -->
-                <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn transparent" id="jazz" href="#jazz-modal"></a>
-
-                <!-- Modal Structure -->
-                <div id="jazz-modal" class="modal">
-                  <div class="modal-content">
-                    <h4>Jazz</h4>
-                    <p>Meet Jazz! She's my little buddy, always at my feet when I code. She has so much personality crammed into her tiny little 11 pound body.</p>
-                    <img src="./assets/Jazz.jpg" class="circle responsive-img" id="jazz-img" alt="photo of a pug's face">
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                  </div>
-                </div>
-              </div>
-
-
+          <!-- Modal Structure -->
+          <div id="books-modal" class="modal">
+            <div class="modal-content">
+              <h4>Library of Books</h4>
+              <p>I am a varacious reader. Fiction, non-fictrion, I love books. I collect books and hope to have a huge library some day. <br>
+                "A room without books is like a body without a soul.”
+              </p>
             </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3"></div>
+        <div class="col s3 m3 l3">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn green" id="legLamp" href="#legLamp-modal"></a>
 
+          <!-- Modal Structure -->
+          <div id="legLamp-modal" class="modal">
+            <div class="modal-content">
+              <h4>A Leg Lamp</h4>
+              <p>The famous leg lamp from A Christmas Story. I have one in my front window and display it with pride. I watch A Christmas Story every year.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m6 l6">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn green" id="monitors" href="#monitors-modal"></a>
+
+          <!-- Modal Structure -->
+          <div id="monitors-modal" class="modal">
+            <div class="modal-content">
+              <h4>Desk Set Up</h4>
+              <p>With my Macbook Air, dual 27" LG monitors and Logitech MX Master wireless mouse, this is where the magic happens.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3 m3 l3"></div>
+        <div class="col s3 m3 l3"></div>
+        <div class="col s6 m6 l6"></div>
+        <div class="col s3 m3 l3">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn-flat modal-trigger invisibleBtn green" id="maestro" href="#maestro-modal"></a>
+
+          <!-- Modal Structure -->
+          <div id="maestro-modal" class="modal">
+            <div class="modal-content">
+              <h4>Maestro</h4>
+              <p>Meet Maestro! He's my little buddy, always at my feet when I code. He has so much personality crammed into his tiny little 9 pound body.</p>
+              <img src="./assets/Maestro.jpg" class="circle responsive-img" id="maestro-img" alt="photo of a pug's face">
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-
-
 
 
     <div class="container main">
@@ -290,10 +286,46 @@
         <div class="grid-example col l12 m12 s12 z-depth-5" id="my-work">
           <h3 id="section-title">Take a Look at My Work</h3>
           <ul class="collapsible popout">
+<!-- Hand and Foot -->
+            <li>
+              <h4>
+                <div class="collapsible-header card-title">
+                  <i class="material-icons">description</i>
+                  Hand and Foot Scorekeeper - Front End Application
+                </div>
 
+              </h4>
+              <div class="collapsible-body card">
+                <div class="card-image waves-block waves-light">
+                  <img src="assets/images/handAndFoot.png" alt="spreadsheet with point values for each card" />
+                </div>
+                <p>This Hand and Foot Scorekeeper App is a front end mobile resonsive app used for keeping score for the card game Hand and Foot. My family loves to play this card game. Scorekeeping is somewhat difficult, so I created this app to make it easier.
+                </p>
+                <h4 class="center">Lanugages and Technologies Used:
+                  <br />
+                  <ul>
+                    <li class="technologies">*JavaScript</li>
+                    <li class="technologies">*HTML</li>
+                    <li class="technologies">*CSS</li>
+                    <li class="technologies">*Bootstrap</li>
+                    
+                  </ul>
+                </h4>
+
+                <div class="row">
+                  <div class="grid-example col l6 m12 s12">
+
+                    <a href="https://michelleberta.github.io/hand-and-foot-scorecard/" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the App</a>
+                  </div>
+                  <br />
+                  <div class="grid-example col l6 m12 s12">
+                    <a href="https://github.com/MichelleBerta/hand-and-foot-scorecard" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the Repo</a>
+                  </div>
+                </div>
+            </li>
 
             <!-- Budget -->
-            <li>
+            <!-- <li>
               <h4>
                 <div class="collapsible-header card-title">
                   <i class="material-icons">description</i>
@@ -305,7 +337,8 @@
                 <div class="card-image waves-block waves-light">
                   <img src="assets/images/budgetTracker.gif" alt="budget showing expenses" />
                 </div>
-                <p>This budget tracker is a full stack application designed so the user can add expenses and deposits to their budget with or without a connection. When entering transactions offline,
+                <p>This budget tracker is a full stack application designed so the user can add expenses and deposits to their budget with or without a connection. When entering transactions
+                  offline,
                   they will populate the total when brought back online.
                 </p>
                 <h4 class="center">Technologies Used:
@@ -334,9 +367,9 @@
                     <a href="https://github.com/MichelleBerta/budget-tracker" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the Repo</a>
                   </div>
                 </div>
-            </li>
+            </li> -->
             <!-- workout -->
-            <li>
+            <!-- <li>
               <h4>
                 <div class="collapsible-header card-title">
                   <i class="material-icons">description</i>
@@ -372,10 +405,10 @@
                     <a href="https://github.com/MichelleBerta/workout-tracker" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the Repo</a>
                   </div>
                 </div>
-            </li>
+            </li> -->
 
             <!-- Employee Directory -->
-            <li>
+            <!-- <li>
               <h4>
                 <div class="collapsible-header card-title">
                   <i class="material-icons">description</i>
@@ -409,10 +442,10 @@
                     <a href="https://github.com/MichelleBerta/employee-directory" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the Repo</a>
                   </div>
                 </div>
-            </li>
+            </li> -->
 
             <!-- scheduler -->
-            <li>
+            <!-- <li>
               <h4>
                 <div class="collapsible-header card-title">
                   <i class="material-icons">description</i>
@@ -440,10 +473,10 @@
                   <div class="grid-example col l12 m12 s12">
                     <a href="https://github.com/MichelleBerta/work-day-scheduler" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the Repo</a>
                   </div>
-            </li>
+            </li> -->
 
             <!-- team profile generator -->
-            <li>
+            <!-- <li>
               <h4>
                 <div class="collapsible-header card-title">
                   <i class="material-icons">description</i>
@@ -473,10 +506,10 @@
                     <a href="https://github.com/MichelleBerta/team-profile-generator" target="_blank" class="waves-effect waves-light btn-large hoverable" id="button">See the Repo</a>
                   </div>
                 </div>
-            </li>
+            </li> -->
 
             <!-- Employe Tracker -->
-            <li>
+            <!-- <li>
               <h4>
                 <div class="collapsible-header card-title">
                   <i class="material-icons">description</i>
@@ -512,7 +545,7 @@
                 </div>
             </li>
         </div>
-      </div>
+      </div> -->
 
       <!--About Me-->
       <div class="grid-example col l12 m12 s12 z-depth-5" id="about-me">
@@ -591,17 +624,3 @@
 </body>
 
 </html>
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

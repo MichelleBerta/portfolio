@@ -12,12 +12,18 @@ body {
   background-color: var(--pink);
 }
 
+/* NAV STUFF */
+
 nav {
   background-color: var(--purple);
   padding-bottom: 8rem;
 }
 
-.brand-logo span {
+span {
+  font-size: 30px;
+}
+
+#name {
   font-family: "Pacifico", cursive;
   font-size: larger;
 }
@@ -40,6 +46,10 @@ h5 {
   color: var(--purple);
 }
 
+/* INTRO */
+
+
+
 h1::before {
   content: " 👋 ";
 }
@@ -55,53 +65,85 @@ h3 {
   text-align: center;
 }
 
+/* switch */
+.switch {
+  margin-top: 23%;
+}
+
+.switch label input[type="checkbox"]:checked + .lever {
+  background-color: #a565e0;
+}
+
+.switch label input[type="checkbox"]:checked + .lever:after {
+  background-color: white;
+}
+
+.switch label .lever:after {
+  background-color: #46f2db;
+}
+
+/* invisible buttons */
+
 .invisibleBtn {
-  height: 110px;
-  width: 110px;
+  /* height: 110px;
+  width: 110px; */
+  opacity:90%;
+}
+
+.invisibleBtn:hover {
+  cursor: pointer;
 }
 
 #magnifyGlass {
-  width: 45px;
+  width: 65px;
   height: 90px;
-  margin-top: 25px;
-  margin-left: 72px;
+  margin-top: 41px;
+  margin-left: 92px;
 }
 
 #beethoven {
-  width: 115px;
-  margin-top: 21px;
-  margin-left: 44px;
+  width: 160px;
+  height: 155px;
+  margin-top: 5px;
+  margin-left: 83px;
 }
 
 #books {
-  width: 45px;
-  height: 90px;
-  margin-top: 25px;
-  margin-left: 37px;
+  width: 91px;
+  height: 104px;
+  margin-top: 34px;
+  margin-left: 130px;
 }
 
 #legLamp {
-  width: 72px;
-  height: 158px;
-  margin-top: -28px;
-  margin-left: 37px;
+  width: 92px;
+  height: 223px;
+  margin-top: -341px;
+  margin-left: 135px;
 }
 
 #monitors {
-  width: 296px;
-  margin-top: 21px;
+  width: 431px;
+  height: 202px;
+  margin-top: -309px;
   margin-left: 14px;
 }
-#jazz {
-  width: 77px;
-  margin-top: 53px;
-  margin-left: 5px;
+#maestro {
+  width: 111px;
+  height: 130px;
+  margin-top: 5px;
+  margin-left: 776px;
 }
 
 .workspace-image {
   background-image: url(assets/images/workspace.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 66%;
+  background-position: right;
+}
+
+#headshot {
+  width: 100%;
 }
 
 .modal {
@@ -116,20 +158,17 @@ h3 {
   text-align: center;
 }
 
-#jazz-img {
-  width: 50%;
+#maestro-img {
+  width: 43%;
 }
 
-#headshot {
-  max-width: 80%;
-  display: block;
-  margin: auto;
-  padding-top: 50px;
-}
+/* SKILLS */
+
 .skills-title {
   font-size: x-large;
   color: var(--purple);
 }
+
 .skills {
   font-size: x-large;
   color: var(--mint);
@@ -153,10 +192,6 @@ li .technologies {
 p {
   font-size: x-large;
   line-height: 140%;
-}
-
-span {
-  font-size: x-large;
 }
 
 #button {
@@ -235,17 +270,4 @@ span {
   padding-bottom: 1rem;
   display: flex;
   justify-content: space-evenly;
-}
-
-/* switch */
-.switch label input[type="checkbox"]:checked + .lever {
-  background-color: #a565e0;
-}
-
-.switch label input[type="checkbox"]:checked + .lever:after {
-  background-color: white;
-}
-
-.switch label .lever:after {
-  background-color: #46f2db;
 }
