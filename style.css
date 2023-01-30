@@ -12,6 +12,10 @@ body {
   background-color: var(--pink);
 }
 
+.container {
+  width: fit-content;
+}
+
 /* NAV STUFF */
 
 nav {
@@ -48,8 +52,6 @@ h5 {
 
 /* INTRO */
 
-
-
 h1::before {
   content: " 👋 ";
 }
@@ -61,7 +63,7 @@ h1 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -87,7 +89,7 @@ h3 {
 .invisibleBtn {
   /* height: 110px;
   width: 110px; */
-  opacity:0%;
+  opacity: 90%;
 }
 
 .invisibleBtn:hover {
@@ -135,12 +137,19 @@ h3 {
   margin-left: 776px;
 }
 
-.workspace-image {
+.workspaceContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+/* .workspace-image {
   background-image: url(assets/images/workspace.svg);
   background-repeat: no-repeat;
   background-size: 66%;
   background-position: right;
-}
+} */
 
 #headshot {
   width: 100%;
@@ -270,4 +279,14 @@ p {
   padding-bottom: 1rem;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 990px) {
+  #headshot {
+    width: 40%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
