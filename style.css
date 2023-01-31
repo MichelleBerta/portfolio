@@ -30,6 +30,7 @@ span {
 #name {
   font-family: "Pacifico", cursive;
   font-size: larger;
+  
 }
 
 nav,
@@ -84,75 +85,41 @@ h3 {
   background-color: #46f2db;
 }
 
-/* invisible buttons */
-
-.invisibleBtn {
-  /* height: 110px;
-  width: 110px; */
-  opacity: 90%;
+/* popups */
+area {
+  outline: 5px solid var(--red);
 }
 
-.invisibleBtn:hover {
-  cursor: pointer;
+.popup {
+  padding: 20px;
+  background-color: rgba(100, 100, 100, 0.9);
+  color: white;
+  font-weight: 100;
+  font-size: 14px;
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 300ms, transform 300ms;
 }
 
-#magnifyGlass {
-  width: 65px;
-  height: 90px;
-  margin-top: 41px;
-  margin-left: 92px;
+.popup > .close {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: black;
+  padding: 4px 10px;
 }
 
-#beethoven {
-  width: 160px;
-  height: 155px;
-  margin-top: 5px;
-  margin-left: 83px;
+.popup:target {
+  opacity: 1;
+  transform: scale(1);
 }
 
-#books {
-  width: 91px;
-  height: 104px;
-  margin-top: 34px;
-  margin-left: 130px;
-}
-
-#legLamp {
-  width: 92px;
-  height: 223px;
-  margin-top: -341px;
-  margin-left: 135px;
-}
-
-#monitors {
-  width: 431px;
-  height: 202px;
-  margin-top: -309px;
-  margin-left: 14px;
-}
-#maestro {
-  width: 111px;
-  height: 130px;
-  margin-top: 5px;
-  margin-left: 776px;
-}
-
-.workspaceContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-}
-
-/* .workspace-image {
-  background-image: url(assets/images/workspace.svg);
-  background-repeat: no-repeat;
-  background-size: 66%;
-  background-position: right;
-} */
-
-#headshot {
-  width: 100%;
+#workspace {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal {
