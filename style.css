@@ -53,9 +53,29 @@ h5 {
 
 /* INTRO */
 
-h1::before {
-  content: " 👋 ";
+.hand {
+  width: 20%;
+  -webkit-animation: rotation 1s infinite linear;
 }
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(7deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-7deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
 
 h1 {
   text-align: center;
@@ -69,9 +89,7 @@ h3 {
 }
 
 /* switch */
-.switch {
-  margin-top: 23%;
-}
+
 
 .switch label input[type="checkbox"]:checked + .lever {
   background-color: #a565e0;
