@@ -51,13 +51,12 @@ h5 {
   color: var(--purple);
 }
 
-/* INTRO */
 
 .hand {
   width: 20%;
-  -webkit-animation: rotation 1s infinite linear;
+  
+  -webkit-animation: rotation .5s infinite linear;
 }
-
 @-webkit-keyframes rotation {
   0% {
     -webkit-transform: rotate(0deg);
@@ -76,6 +75,16 @@ h5 {
   }
 }
 
+/* .hand {
+  width: 20%;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+  transition-delay: 500ms;
+}
+
+.hand:hover {
+  transform: rotate(75deg);
+} */
 
 h1 {
   text-align: center;
@@ -180,6 +189,11 @@ ul {
 li .technologies {
   font-size: x-large;
   display: inline;
+}
+
+li .list {
+  font-size: x-large;
+  list-style-type: disc;
 }
 
 p {
