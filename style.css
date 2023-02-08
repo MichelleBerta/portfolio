@@ -1,15 +1,17 @@
 * {
   font-family: "Patrick Hand", cursive;
-  --purple: #a565e0;
+  --purple: #7414cd;
+  --textPurple: #a565e0;
   --charcoal: #39373b;
   --mint: #46f2db;
   --light: #f8f9fa;
-  --pink: #f5bff5;
+  --lightPurple: #c9b3de;
   --yellow: #f5f3bf;
 }
 
 body {
-  background-color: var(--pink);
+  background-color: var(--lightPurple);
+
 }
 
 .container {
@@ -168,7 +170,7 @@ h3 {
 
 .skills-title {
   font-size: x-large;
-  color: var(--purple);
+  color: var(--textPurple);
 }
 
 .skills {
@@ -243,6 +245,10 @@ p {
   background-color: var(--mint);
 }
 
+.dark .skills-title {
+  color: var(--textPurple);
+}
+
 /* BRIGHT MODE */
 
 .bright,
@@ -275,6 +281,7 @@ p {
 .bright #section-title {
   background-color: var(--purple);
 }
+
 
 /* footer */
 
