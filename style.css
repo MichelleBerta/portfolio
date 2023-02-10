@@ -77,16 +77,6 @@ h5 {
   }
 }
 
-/* .hand {
-  width: 20%;
-  transition-duration: 500ms;
-  transition-timing-function: ease-in;
-  transition-delay: 500ms;
-}
-
-.hand:hover {
-  transform: rotate(75deg);
-} */
 
 h1 {
   text-align: center;
@@ -212,6 +202,10 @@ p {
 
 .carousel {
   overflow: visible;
+}
+
+.card .card-image img  {
+  top: 20px;
 }
 
 /* DARK MODE */
