@@ -1,0 +1,306 @@
+* {
+  font-family: "Patrick Hand", cursive;
+  --purple: #7414cd;
+  --textPurple: #a565e0;
+  --charcoal: #39373b;
+  --mint: #46f2db;
+  --light: #f8f9fa;
+  --lightPurple: #c9b3de;
+  --yellow: #f5f3bf;
+}
+
+body {
+  background-color: var(--lightPurple);
+
+}
+
+.container {
+  width: fit-content;
+}
+
+/* NAV STUFF */
+
+nav {
+  background-color: var(--purple);
+  padding-bottom: 8rem;
+}
+
+span {
+  font-size: 30px;
+}
+
+#name {
+  font-family: "Pacifico", cursive;
+  font-size: larger;
+  
+}
+
+nav,
+a {
+  text-decoration: none;
+}
+
+nav,
+a:hover {
+  color: var(--mint);
+}
+
+.dropdown {
+  background-color: var(--mint);
+}
+
+h5 {
+  color: var(--purple);
+}
+
+
+.hand {
+  width: 20%;
+  
+  -webkit-animation: rotation .5s infinite linear;
+}
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(7deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-7deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+
+h1 {
+  text-align: center;
+  transform: rotate(-8deg);
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* switch */
+
+
+.switch label input[type="checkbox"]:checked + .lever {
+  background-color: #a565e0;
+}
+
+.switch label input[type="checkbox"]:checked + .lever:after {
+  background-color: white;
+}
+
+.switch label .lever:after {
+  background-color: #46f2db;
+}
+
+/* popups */
+
+.popup {
+  padding: 20px;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1;
+  position:absolute;
+  opacity: 90;
+  transform: scale(0);
+  transition: opacity 300ms, transform 300ms;
+  margin-top:-795px;
+  margin-right:25px;
+}
+
+.popup > .close {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: black;
+  padding: 4px 10px;
+}
+
+.popup:target {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#workspace {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal {
+  text-align: center;
+}
+
+#home {
+  margin-top: 75px;
+}
+
+#section-title {
+  text-align: center;
+}
+
+#maestro-img {
+  width: 43%;
+}
+
+/* SKILLS */
+
+.skills-title {
+  font-size: x-large;
+  color: var(--textPurple);
+}
+
+.skills {
+  font-size: x-large;
+  color: var(--mint);
+}
+
+/* my work cards and about me */
+
+.work-header {
+  text-align: center;
+}
+ul {
+  list-style-type: circle;
+  display: inline;
+}
+
+li .technologies {
+  font-size: x-large;
+  display: inline;
+}
+
+li .list {
+  font-size: x-large;
+  list-style-type: disc;
+}
+
+p {
+  font-size: x-large;
+  line-height: 140%;
+}
+
+#button {
+  max-width: fit-content;
+  display: block;
+  margin: auto;
+}
+
+.carousel {
+  overflow: visible;
+}
+
+.card .card-image img  {
+  top: 20px;
+}
+
+/* DARK MODE */
+.dark,
+.dark .card-title,
+.dark .card,
+.dark .modal {
+  background-color: var(--charcoal);
+}
+
+.dark .popup {
+  background-color: #46f2db;
+  color:#39373b;
+}
+
+.dark #section-title,
+.dark #button {
+  color: var(--charcoal);
+}
+
+.dark h1,
+.dark h3,
+.dark .card,
+.dark .card-title,
+.dark .skills,
+.dark .modal {
+  color: var(--mint);
+}
+
+.dark #button,
+.dark #section-title {
+  background-color: var(--mint);
+}
+
+.dark .skills-title {
+  color: var(--textPurple);
+}
+
+/* BRIGHT MODE */
+
+.bright,
+.bright .card-title,
+.bright .card,
+.bright .modal {
+  background-color: var(--light);
+}
+
+.bright #section-title,
+.bright #button {
+  color: var(--light);
+}
+
+.bright .popup {
+  background-color: #a565e0;
+  color:#f8f9fa;
+}
+
+.bright h1,
+.bright h3,
+.bright .card,
+.bright .card-title,
+.bright .skills,
+.bright .modal {
+  color: var(--purple);
+}
+
+.bright #button,
+.bright #section-title {
+  background-color: var(--purple);
+}
+
+
+/* footer */
+
+#footer {
+  background-color: var(--purple);
+  color: white;
+}
+.footer-links {
+  font-size: x-large;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 990px) {
+  #headshot {
+    width: 40%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+#workspace {
+  width: 100%;
+}
+
+}
